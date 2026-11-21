@@ -1,0 +1,12 @@
+{
+  "name": "solandra-voice",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:compose": "process-compose up",
+    "build": "pnpm --filter frontend build && pnpm --filter server build",
+    "typecheck": "pnpm -r typecheck",
+    "start": "pnpm --filter server start"
+  }
+}
